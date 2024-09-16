@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TO DO List</h1>
+
+        <!-- Input field to add a new task -->
+        <div class="add-task">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <button id="add-task-button">Add Task</button>
+        </div>
+
+        <!-- List of tasks -->
+        <div class="task-list">
+            <h3>Tasks To Complete</h3>
+            <ul id="tasks"></ul>
+        </div>
+
+        <!-- Reset button -->
+        <button id="reset-button">Reset Progress</button>
+
+        <!-- Progress Section -->
+        <div class="progress">
+            <h3>Progress</h3>
+            <p id="points-display">Total Points: 0</p>
+            <div class="progress-bar">
+                <div id="progress-bar-fill"></div>
+            </div>
+            <p id="level-display">Level: Beginner</p>
+        </div>
+
+        <!-- Badges -->
+        <div class="badges">
+            <h3>Your Badges</h3>
+            <div id="badge-display"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
